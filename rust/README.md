@@ -2,14 +2,12 @@
 
 1. bin フォルダ内の過去の問題をコピーして新しい rust ファイルを作る
    ```
-   cp src/bin/20241109_PracticeA.rs new_file.rs
+   cp src/bin/template.rs new_file.rs
    ```
 1. 問題文を読む
-1. テストコードは no1 だけ残してあとは消す
-1. 入力の修正をする。`a`と`input`で単語検索すると見つけやすい。
-1. テストコードを書く。入力例の数だけ書く。
-    * 改行区切りでもスペース区切りと同様に取れる
+1. 問題のインプットに応じて `modify` の箇所を修正する
 1. 問題を解く
 1. テスト実施
-    * vscodeの拡張機能で、クリックでやるのが簡単
-    * println!したい場合は、`cargo test --bin <file_name> -- --nocapture`
+   - vscode の拡張機能で、クリックでやるのが簡単
+   - println!したい場合は、`cargo test --bin <file_name> -- --nocapture`
+1. 提出。テストコード以外の部分をコピペする。
