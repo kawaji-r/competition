@@ -29,11 +29,8 @@ fn execute(b: Vec<i32>) -> String {
 #[allow(dead_code)]
 fn execute2(b: Vec<i32>) -> String {
     // インデックスと値のペアを作成
-    let mut indexed_numbers: Vec<(usize, i32)> = b
-        .iter()
-        .enumerate()
-        .map(|(i, &val)| (i, val))
-        .collect();
+    let mut indexed_numbers: Vec<(usize, i32)> =
+        b.iter().enumerate().map(|(i, &val)| (i, val)).collect();
 
     // 値でソート（降順）
     indexed_numbers.sort_by(|a, b| b.1.cmp(&a.1));
